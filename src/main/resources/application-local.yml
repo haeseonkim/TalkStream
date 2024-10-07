@@ -1,0 +1,6 @@
+#application-local
+spring:
+  application:
+    name: talkstream
+server:
+    port: 8080
