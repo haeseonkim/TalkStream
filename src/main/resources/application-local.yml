@@ -1,6 +1,15 @@
 #application-local
+server:
+  port: 8080
+
 spring:
   application:
     name: talkstream
-server:
-    port: 8080
+
+management:
+  endpoints:
+    prometheus:
+      enabled: true
+    web:
+      exposure:
+        include: prometheus
